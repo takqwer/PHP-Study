@@ -1,3 +1,12 @@
 <?php
 // 配列の全ての要素を2倍にして表示するコードを記述してください
 $numbers = array(1, 2, 3, 4, 5);
+
+for ($i = 0; $i < count($numbers); $i++) {
+    $numbers[$i] = $numbers[$i] * 2;
+    echo "$numbers[$i]\n";
+}
+
+// foreach($numbers as $number) {
+//     echo $number * 2;
+// }
