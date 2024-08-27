@@ -14,5 +14,8 @@ $subWeapon->echoStatus();
 $mainWeapon->relaod();
 $subWeapon->relaod();
 
+$mainWeapon->fire();
+$subWeapon->fire();
+
 $mainWeapon->echoStatus();
 $subWeapon->echoStatus();

@@ -35,7 +35,7 @@ class Gun
     {
         // 問題2
         if ($this->currentMagazine == $this->maxMagazine) {
-            echo "リロードの必要はありません/n";
+            echo "リロードの必要はありません\n";
         } else {
             $this->currentMagazine = $this->maxMagazine;
         }
@@ -45,6 +45,17 @@ class Gun
     function fire()
     {
         // 問題3
+        if ($this->currentMagazine == 0) {
+            echo "リロードしてください\n";
+            return;
+        }
+
+        $this->currentMagazine = $this->currentMagazine - 1;
+        echo "$this->name を発砲しました。残弾: $this->currentMagazine 発\n";
+
+        if ($this->currentMagazine == 0) {
+            echo "リロードしてください\n";
+        }
     }
 
     // 拡張マガジンを装着
